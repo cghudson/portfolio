@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 .sections aside {
     border-right: 5px solid var(--tertiary-color);
     width: 15%;
@@ -29,7 +30,7 @@ body {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    padding-right: 1%;
+    padding: 1%;
 }
 
 /* header style */
@@ -77,8 +78,9 @@ li:hover a {
 /* hero style */
 .hero {
     background-image: url("../images/leaf-banner.jpg");
-    background-position: 80%;
     background-size: cover;
+    width: 100%;
+    right: 0;
 }
 
 .hero h2 {
@@ -88,6 +90,14 @@ li:hover a {
 /* end hero style */
 
 /* about style */
+#about {
+    text-align: right;
+}
+
+.about {
+    display: flex;
+}
+
 .about-info {
     display: flex;
     padding: 20px 25px;
@@ -109,9 +119,9 @@ li:hover a {
 .work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1100px;
+    justify-content: flex-start;
+    margin: 2px;
+    padding-left: 2%;
 }
 
 .work a {
@@ -135,7 +145,7 @@ li:hover a {
     margin: 2px;
     width: 400px;
     height: 150px;
-    border: 4px solid var(--tertiary-color);
+    border: 4px solid var(--secondary-color);
     position: relative;
 }
 
@@ -150,7 +160,7 @@ li:hover a {
 }
 
 .project:hover {
-    border-color: var(--secondary-color);
+    border-color: var(--primary-color);
 }
 
 .project:hover h3 {
@@ -183,12 +193,48 @@ li:hover a {
 }
 /* end contact style */
 
+/* footer style */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: right;
     margin-left: 0;
     margin-right: 0;
-    max-width: 100%;
+    width: 100%;
     padding: 15px;
 }
+/* end footer style */
+
+/* media queries */
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about {
+        text-align: right;
+    }
+
+    .work {
+        display: inline-block;
+    }
+
+    .project {
+        display: flex;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .about {
+        display: inline-block;
+    }
+
+    .profile-image {
+        float: left;
+    }
+
+}
+/* end media queries */
