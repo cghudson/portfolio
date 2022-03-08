@@ -28,19 +28,9 @@ body {
     min-width: 15%;
     max-width: 15%;
     display: flex;
-   justify-content: end;
-   flex-wrap: wrap;
-   padding-right: 1%;
-}
-.section-title {
-    /* display: flex;
-    display: inline-block; */
-    /* padding: 10px 10px 0px 10px; */
-    /* width: 20%; */
-    /*max-width: 20%; */
- 
-    /* flex-wrap: wrap;
-    text-align: right; */
+    justify-content: end;
+    flex-wrap: wrap;
+    padding-right: 1%;
 }
 
 /* header style */
@@ -118,7 +108,14 @@ header nav ul li a {
     max-width: 1100px;
 }
 
+.work a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 #main-project {
+    background-image: url(../images/run-buddy.jpg);
+    background-size: cover;
     width: 810px;
     height: 300px;
 }
@@ -135,6 +132,16 @@ header nav ul li a {
     border: 4px solid var(--box-border);
     position: relative;
 }
+
+.project-title {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 6px;
+}
 /* end work style */
 
 /* contact style */
@@ -150,8 +157,9 @@ header nav ul li a {
 .contact p {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-color); 
+    font-size: 20px;
     text-decoration: none;
-    padding-right: 2%;
+    padding-right: 4%;
 }
 
 .contact a {
@@ -159,3 +167,13 @@ header nav ul li a {
     color: var(--primary-color);
 }
 /* end contact style */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    padding: 15px;
+}
