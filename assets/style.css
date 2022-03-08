@@ -22,15 +22,25 @@ body {
     justify-content: space-between;
     margin-bottom: 50px;
 }
-
-.section-title {
-    display: flex;
-    display: inline-block;
-    align-items: flex-start;
-    text-align: right;
+.sections aside {
     border-right: 5px solid var(--tertiary-color);
-    padding: 10px 10px 200px 10px;
-    width: 200px;
+    width: 15%;
+    min-width: 15%;
+    max-width: 15%;
+    display: flex;
+   justify-content: end;
+   flex-wrap: wrap;
+   padding-right: 1%;
+}
+.section-title {
+    /* display: flex;
+    display: inline-block; */
+    /* padding: 10px 10px 0px 10px; */
+    /* width: 20%; */
+    /*max-width: 20%; */
+ 
+    /* flex-wrap: wrap;
+    text-align: right; */
 }
 
 /* header style */
@@ -87,6 +97,7 @@ header nav ul li a {
     padding: 20px 25px;
     text-align: left;
     line-height: 1.5;
+    width: 80%;
 }
 
 .profile-image {
@@ -108,7 +119,7 @@ header nav ul li a {
 }
 
 #main-project {
-    width: 800px;
+    width: 810px;
     height: 300px;
 }
 
@@ -127,7 +138,24 @@ header nav ul li a {
 /* end work style */
 
 /* contact style */
+#contact {
+    text-align: right;
+}
+
 .contact {
     display: flex;
+    width: 80%;
+}
+
+.contact p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color); 
+    text-decoration: none;
+    padding-right: 2%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 /* end contact style */
