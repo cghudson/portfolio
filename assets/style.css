@@ -222,12 +222,17 @@ footer {
 
     .project {
         display: flex;
-        width: 100%;
+        max-width: 90%;
         display: inline-block;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 575px) {
+@media (max-width: 575px) {
     .about {
         display: inline-block;
     }
@@ -236,5 +241,8 @@ footer {
         float: left;
     }
 
+    .project {
+        max-width: 90%;
+    }
 }
 /* end media queries */
