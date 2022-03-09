@@ -1,6 +1,6 @@
 # Portfolio
 
-### Coded by Carolyn Hudson
+### Created by Carolyn Hudson
 
 ---
 
