@@ -1,7 +1,6 @@
 :root {
     --primary-color: #425738;
     --secondary-color: #E4F9DC;
-    --tertiary-color: #640215;
     --box-color: #E0E2DF;
 }
 
@@ -22,7 +21,7 @@ body {
 }
 
 .sections aside {
-    border-right: 5px solid var(--tertiary-color);
+    border-right: 5px solid var(--primary-color);
     width: 15%;
     min-width: 15%;
     max-width: 15%;
@@ -110,7 +109,7 @@ li:hover a {
     height: 250px;
     margin: 20px 60px;
     float: right;
-    border: 4px solid var(--tertiary-color);
+    border: 4px solid var(--primary-color);
 }
 /* end about style */
 
@@ -169,6 +168,10 @@ li:hover a {
 .project:hover h3 {
     background: black;
     color: white;
+}
+
+#meditation-buddy {
+    background-image: url(../images/meditation-buddy.jpg)
 }
 /* end work style */
 
